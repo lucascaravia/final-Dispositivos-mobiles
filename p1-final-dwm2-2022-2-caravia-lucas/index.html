@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ecomerce con DOM</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+    
+<!--navBar-->
+<div class="nav-container">
+    <nav class="navbar">
+        <img src="public/Drops-logo.png" class="navbar-logo">
+        <!--<div id="buttons">
+            <button class="button-value" onclick="filterProduct('all')">All</button>
+            <button class="button-value" onclick="filterProduct('Topwear')">
+              Topwear
+            </button>
+            <button class="button-value" onclick="filterProduct('Bottomwear')">
+              Bottomwear
+            </button>
+            <button class="button-value" onclick="filterProduct('Jacket')">
+              Jacket
+            </button>
+            <button class="button-value" onclick="filterProduct('Watch')">
+              Watch
+            </button>
+          </div>-->
+        <h1 class="ver-carrito" id="verCarrito">🛒 <span id="cantidadCarrito" class="cantidad-carrito"></span></h1>
+
+    </nav>
+</div>
+
+<!--banner-->
+    <div class="banner">
+        <div class="banner-container">
+            <h1>Bienvenido a nuestro ecommerce!</h1>
+            <p>Encontraras los mejores productos para ti en nuestra web. Compra</p>
+        </div>
+    </div>
+
+<!--contenido de la tienda-->
+<div class="contenido-tienda" id="contenidoDeLaTienda"></div>
+
+<!--modal container-->
+<div class="modal" id="modal-container"></div>
+
+
+    <script src="./js/productos.js"></script>
+    <script src="./js/app.js"></script>
+    <script src="./js/carrito.js"></script>
+</body>
+</html>
